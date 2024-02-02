@@ -297,7 +297,7 @@ span {
 
 .emailContainerLeft {
 	background-color:white;
-	width:970px;
+	width:955px;
 	height:87vh;
 	border-radius:20px;
 	margin-left:17px;
@@ -378,20 +378,62 @@ span {
 
 .emailMsg {
 	display:flex;
-	align-items:center;
+	align-items:center; 
+	justify-content:flex-start;
 	background-color:#f2f6fc;
 	border-bottom: 1px solid #e1e7ee;
-	padding:9px 15px;
-	color:#8c7577;
-	padding-bottom:8px;
-	padding-right:0;
+	padding:6px;
+	padding-left:12px;
+	font-size:14px;
+	color:#484c4e;
+	width:100%;
+	z-index:1;
+	position:relative;
+}
+.emailMsg span{
+	font-size:18px;
+	padding:5px;
+	
+}
+
+.emailMsgIcons{
+	display:flex;
+	justiy-content:center;
+	align-items:center;
+	width:6.5%;
+		
+}
+.emailMsgContents{
+	display: flex;
+	align-items:center;
+	justify-content:flex-start;
+
+}
+.fromWhat{
+	display:flex;
+	gap:30px;
+	width:840px;
+	align-items:center;
+}
+
+.emailMsgFrom{
+	width:175px;
+}
+
+.emailMsg:hover {
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);;  
+    z-index:2;
+    cursor: pointer;
+}
+.emailMsg:hover span{
+	color:black;
+}
+
+.emailFrom{
+	padding-left:5px;
 	width:100%;
 }
-.emailMsg:hover {
-	border-left: 2px solid #dadce0; 
-    	border-right: 2px solid #dadce0;
-    	border-bottom: 2px solid #dadce0;
-}
+
 
 .iconText {
 	display:flex;
@@ -431,38 +473,58 @@ span {
 
 .mailContents {
 	display:flex;
+	width:10%;
 	justify-content:center;
 	align-items:center;
 	font-size:14px;
 	color:#484c4e;
 }
-.date {
-	position:relative;
-	font-size:12px;
-	color:#202124;
-	left:570px;
-	color:#484c4e;
+
+
+.emailMsgIcons span:hover{
+		
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
 }
+
 
 .emailContainerRight {
 	display:flex;
 	position:relative;
-	left:15px;
+	left:7px;
 	flex-direction:column;
-	padding-top:82px;
+	margin-top:82px;
 	align-items:flex-start;
 }
 .emailContainerRight > img {
 	width:20px;
 	height:20px;
-	padding-bottom:38px;
+	padding:10px;
+	margin-bottom:38px;
 }
+.emailContainerRight img:hover{
+background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
 
 .emailContainerRight > div {
 	height:1px;
 	width:20px;
+	margin-left:6px;
 	background-color:#e1e7ee;
 	margin-bottom:38px;
 
 }
 
+.emailContainerRight span{
+	
+	padding:7px;
+}
+.emailContainerRight span:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
