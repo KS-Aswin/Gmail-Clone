@@ -1,4 +1,4 @@
-* {
+*{
 	margin:0;
 	padding:0;
 	font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
@@ -9,7 +9,7 @@ body {
 }
 
 span {
-	color:#5f6368;
+	color:#202124;
 }
 
 .container {
@@ -25,14 +25,11 @@ span {
 .navLeft {
 	display:flex;
 	flex-direction:column;
-	justify-content:flex-start;
 	align-items:center;
 	background-color:#eaf1fb;
 	height:100vh;
 	width:28px;
 	padding:0 20px;
-	gap:0;
-	
 }
 
 .menuIcon {
@@ -40,21 +37,29 @@ span {
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	padding-top:10px;
-	padding-bottom:10px;
-	gap:6px;
+	padding:10px;
+	gap:1px;
+	cursor:pointer;
 }
 .menuIcon > span {
-	font-size:20px;
+	font-size:24px;
 }
 
 .menuIcon > p {
 	font-size:12px;
+	color:#444746;
 }
 .navIcon {
-	padding-top:22px;
-	padding-bottom:20px;
+	padding:10px;
+	margin:10px 0;
 }
+.navIcon:hover {
+	background-color:#dadce0;
+	padding:10px;
+	cursor:pointer;
+	border-radius:50%;
+}
+
 .mail {
 	background-color:#d3e3fd;
 	padding:5px 13px;
@@ -66,15 +71,20 @@ span {
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	cursor:pointer;
 }
 .mailBottom {
 	padding:5px 13px;
+	cursor:pointer;
 }
 .mailBottom:hover {
 	background-color:#dadce0;
 	padding:5px 13px;
 	border-radius:45px;
+	
 }
+
+
 .mailBottom > span {
 	font-size:20px;
 	display:flex;
@@ -94,23 +104,26 @@ span {
 	display:flex;
 	flex-direction:column;
 	padding:10px;
+	
 	width:220px;
 }
 
 .gmail {
-	padding:2px 13px;
+	padding:2px 10px;
 	cursor:pointer;
 }
 
 .compose {
 	width:138.47px;
-	height:56px;
+	height:55px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	background-color:#c2e7ff;
-	margin:15px 2px 8px 3px;
+	margin:15px 2px 8px 0px;
 	border-radius:15px;
+	gap:3px;
+	
 }
 .compose:hover{
 	box-shadow: 1px 1px 8px .1px #8c7577;
@@ -119,14 +132,16 @@ span {
 
 
 .compose > span {
-	font-size:25px;
-	color:#001D35;
+	font-size:24px;
+	color:#001d35;
 }
 .compose > p {
 	font-size:14px;
 	font-weight:600;
-	color:#2a4961;
+	color:#001D35;
 	padding:10px;
+	font-weight: 500;
+	font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
 .menuContents {
@@ -134,8 +149,9 @@ span {
 	flex-direction:column;
 	justify-content:center;
 	align-items:flex-start;
-	padding:0px 10px 10px 5px;
+	padding:0px 10px 10px 0px;
 	width:205px;
+	color:#202124;
 	
 }
 
@@ -149,7 +165,8 @@ span {
 	gap:15px;
 	width:205px;
 	border-radius:30px;
-	color:#6f6f71;
+	color:#202124;
+	margin:0;
 	
 }
 
@@ -162,7 +179,7 @@ span {
 	margin-top:6px;
 	border-radius:30px;
 	background-color:#d3e3fd;
-	color:#27415a;
+	color:#001d35;
 }
 .inbox:hover {
 	background-color:#d3e3fd;
@@ -171,20 +188,24 @@ span {
 .contents > p {
 	font-size:14px;
 	padding:2px 0;
+	color:#444;
+	
 }
 .contents > span {
 	font-size:20px;
+	color:#444;
 }
 
 .label {
 	display:flex;
-	justify-content:flext-start;
+	justify-content:flex-start;
 	align-items:center;
-	padding:8px 14px;
+	padding:9px 14px;
 	color:#6f6f71;
-	gap:123px;
-	font-size:15px;
-	font-weight:100;
+	gap:125px;
+	font-size:16px;
+	font-weight:500;
+	color: #444;
 }
 .label span{
 	font-size:20px;
@@ -236,11 +257,16 @@ span {
 }
 
 .searchIcon{
-	padding:10px;
-	font-size:21px;
-	color:#5F6368;
+	padding:10px 0;
+	font-size:24px;
+	color:#444746;
 }
-
+.tuneIcon{
+	padding:10px;
+	margin-left:15px;
+	font-size:24px;
+	color:#444746;
+}
 
 .searchBox span:hover{
 	background-color: #dadce0;
@@ -253,10 +279,9 @@ span {
 	outline:none;
 	background-color:#eaf1fb;
 	padding: 0 9px;
-	font-size: 15px;
+	font-size: 16px;
 	width: 195px;
-	
-	
+	font-weight:500;	
 }
 
 .formText {
@@ -272,11 +297,11 @@ span {
 	align-items:center;
 	gap:10px;
 	color:#5f6368;
-	margin-left:200px
+	margin-left:200px;
 }
 .navbarIcons span{
 	padding:10px;
-	font-size:21px;
+	font-size:24px;
 	color:#5F6368;	
 }
 .navbarIcons span:hover{
@@ -316,24 +341,23 @@ span {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	
 	height:10px;
 }
 .emailNavLeft span{
-	padding:5px 2px;	
+	padding:5px 2px;
+	color:#444;
+	font-size:18px;	
 }
 .emailNavLeft span:hover {
 	background-color: #dadce0;
 	cursor:pointer;
 	border-radius:15%;
 }
-.refAndMore{
-	padding-left:10px;
-}
+
 .refAndMore span{
-	font-size:17px;
-	padding:10px;
-	margin-left:15px;
+	font-size:18px;
+	padding:5px;
+	margin-left:10px;
 }
 .refAndMore span:hover {
 	background-color: #dadce0;
@@ -343,18 +367,13 @@ span {
 
 
 
-.emailNavLeft > * {
-	font-size:17px;
-	padding-right:16px;
-}
-.checkBox {
-	padding-right:5px;
-}
+
+
 .emailNavRight {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	font-size:11px;
+	font-size:12px;
 	padding:14px 0px;
 	gap:10px;
 }
@@ -369,11 +388,12 @@ span {
 
 .emailNavRight > span {
 	font-size:20px;
+	color:#b8b8b8;
 	
 }
 .emailNavRight > p {
 	padding-right:15px;
-	color:#5f6368;
+	color:#5E5E5E;
 }
 
 .emailMsg {
@@ -385,7 +405,7 @@ span {
 	padding:6px;
 	padding-left:12px;
 	font-size:14px;
-	color:#484c4e;
+	color:#202124;
 	width:100%;
 	z-index:1;
 	position:relative;
@@ -398,10 +418,13 @@ span {
 
 .emailMsgIcons{
 	display:flex;
-	justiy-content:center;
+	justify-content:center;
 	align-items:center;
 	width:6.5%;
-		
+	color:#b8b8b8;		
+}
+.emailMsgIcons span{
+	color:#b8b8b8;
 }
 .emailMsgContents{
 	display: flex;
@@ -416,17 +439,29 @@ span {
 	align-items:center;
 }
 
-.emailMsgFrom{
-	width:175px;
+.emailMsgFrom p{
+	width:145px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.emailMsgWhat p{
+	width:580px;
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	margin-left:25px;
+	
 }
 
 .emailMsg:hover {
-    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);;  
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);  
     z-index:2;
     cursor: pointer;
 }
 .emailMsg:hover span{
-	color:black;
+	color:#444;
 }
 
 .emailFrom{
@@ -434,52 +469,10 @@ span {
 	width:100%;
 }
 
-
-.iconText {
-	display:flex;
-	position:relative;
-	justify-content:;
-	align-items-center;
-	color:#202124;
-	margin-right:45px;
+.date{
+	color:#5f6368;
+	font-size:12px;
 }
-.txtIcons{
-	display:flex;
-	justify-conent:center;
-	align-items:center;
-	margin-right:10px;
-	padding:10px;
-	padding-left:0px;
-
-}
-.txtIcons span:hover{
-	background-color: #dadce0;
-	cursor:pointer;
-	border-radius:50%;
-	padding:5px;
-	
-}
-.txtIcons > span{
-	font-size:20px;	
-	color:#babec1;
-}
-
-.txtContents{
-	
-	font-size:14px;
-	color:#484c4e;
-	padding:4px 0px;
-}
-
-.mailContents {
-	display:flex;
-	width:10%;
-	justify-content:center;
-	align-items:center;
-	font-size:14px;
-	color:#484c4e;
-}
-
 
 .emailMsgIcons span:hover{
 		
@@ -492,19 +485,20 @@ span {
 .emailContainerRight {
 	display:flex;
 	position:relative;
-	left:7px;
+	left:5px;
 	flex-direction:column;
-	margin-top:82px;
-	align-items:flex-start;
+	margin-top:70px;
+	align-items:center;
+	padding:5px;
 }
-.emailContainerRight > img {
+.emailContainerRight  img {
 	width:20px;
 	height:20px;
 	padding:10px;
-	margin-bottom:38px;
+	margin-bottom:15px;
 }
 .emailContainerRight img:hover{
-background-color: #dadce0;
+	background-color: #dadce0;
 	cursor:pointer;
 	border-radius:50%;
 }
@@ -513,9 +507,10 @@ background-color: #dadce0;
 .emailContainerRight > div {
 	height:1px;
 	width:20px;
-	margin-left:6px;
+	margin-left:0;
 	background-color:#e1e7ee;
-	margin-bottom:38px;
+	margin-bottom:25px;
+	margin-top:15px;
 
 }
 
